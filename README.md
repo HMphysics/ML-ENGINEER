@@ -35,13 +35,7 @@ The application will start running on `http://127.0.0.1:5000/`. Access this URL 
 ## Notes
 
 
-
-
-
-
-Sure, here's a basic README for your Flask application:
-
----
+#HERO MODE
 
 # Audio Transcription and Text Analysis Web App
 
@@ -51,38 +45,11 @@ This is a simple web application built with Flask that transcribes audio files a
 
 Before running the application, make sure you have the following installed:
 
-- Python 3.x
+- Python 3.11
 - Flask
 - deepgram
-- openai
+- openai==0.28
 - dotenv
-
-You'll also need API keys for both Deepgram and OpenAI. Create a `.env` file in the project directory and add your API keys as follows:
-
-```
-DEEPGRAM_API_KEY=YOUR_DEEPGRAM_API_KEY
-OPENAI_API_KEY=YOUR_OPENAI_API_KEY
-```
-
-## Installation
-
-1. Clone the repository:
-
-   ```
-   git clone https://github.com/your-username/your-repository.git
-   ```
-
-2. Install dependencies:
-
-   ```
-   pip install -r requirements.txt
-   ```
-
-3. Run the application:
-
-   ```
-   python app.py
-   ```
 
 ## Usage
 
@@ -94,15 +61,7 @@ OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 
 ## Contributors
 
-- [Your Name](https://github.com/your-username)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Replace "YOUR_DEEPGRAM_API_KEY" and "YOUR_OPENAI_API_KEY" with your actual API keys. Additionally, replace "your-username" and "your-repository" with your GitHub username and repository name, respectively. You can also add more detailed instructions or information as needed.
+- [HMPhysics](https://github.com/your-username)
 
 - Security: When allowing file uploads, consider implementing additional security measures to prevent malicious file uploads or other security vulnerabilities.
 - Error Handling: This code provides basic error handling for file uploads. You may want to enhance error handling to provide better feedback to users in case of errors.
