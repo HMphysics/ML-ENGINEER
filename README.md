@@ -67,3 +67,68 @@ Before running the application, make sure you have the following installed:
 - Error Handling: This code provides basic error handling for file uploads. You may want to enhance error handling to provide better feedback to users in case of errors.
 - Performance: For larger files or heavier processing tasks, consider optimizing the application for performance.
 
+#MASTER MODE
+
+Audio Transcription and Sentiment Analysis
+This Python script utilizes Deepgram and OpenAI APIs to transcribe audio files and analyze the sentiment of the transcribed text. It can be integrated into various applications or used as a standalone service.
+
+Prerequisites
+Before using this script, make sure you have the following:
+
+Deepgram API key
+OpenAI API key
+Docker
+AWS lambda
+AWS API Gateway
+Installation
+To run this script, follow these steps:
+
+Install the required Python packages:
+
+bash
+Copy code
+pip install deepgram openai
+Replace the placeholders in the code with your Deepgram and OpenAI API keys.
+
+Usage
+Import the necessary modules:
+
+python
+Copy code
+import json
+import base64
+from deepgram import DeepgramClient, FileSource
+from openai import OpenAI
+Initialize Deepgram and OpenAI clients with your API keys:
+
+python
+Copy code
+deepgram = DeepgramClient("YOUR_DEEPGRAM_API_KEY")
+openai = OpenAI(api_key="YOUR_OPENAI_API_KEY")
+Define the transcribe_and_analyze_audio() function to transcribe audio and analyze sentiment:
+
+python
+Copy code
+def transcribe_and_analyze_audio(audio_file):
+    # Function implementation
+Implement the lambda_handler() function to handle Lambda events:
+
+python
+Copy code
+def lambda_handler(event, context):
+    # Function implementation
+Deploy the code to AWS Lambda or run it locally as needed.
+
+Functionality
+The transcribe_and_analyze_audio() function transcribes the audio file using Deepgram and then analyzes the sentiment of the transcribed text using OpenAI's GPT-3 model.
+The lambda_handler() function serves as the entry point for AWS Lambda integration, handling incoming events and triggering the transcription and analysis process.
+Inputs and Outputs
+Input: Base64-encoded audio file.
+Output: JSON object containing the transcription and sentiment analysis results.
+Error Handling
+If an error occurs during transcription or analysis, the script returns an error message in the JSON response.
+Credits
+This script utilizes the following APIs:
+
+Deepgram API
+OpenAI API
