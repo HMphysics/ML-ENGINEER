@@ -1,0 +1,54 @@
+The hero mode was a little more complicated for me by introducing a new program and having to read all the documentation that was not updated on its own page.
+I had to update python to version 3.11 by creating a new environment and installing all the dependencies.
+
+The audio transcription is extremely accurate and even recording my own audio very quietly, the program was able to detect it.
+You can include .wav, .mp3, and more audio formats.
+
+
+The master mode was the most tedious because I had to use all the available technologies, at the same time it was the most interesting.
+
+I used AWS because it is the cloud in which I have the most experience and in which scalability is easiest since it has lambda functions that are exceptionally good for what I was executing.
+
+At first it was complicated because I wanted to save the audios that were uploaded in an S3 bucket but I realized that just having the lambda function executed when an API call is used could help.
+For the REST API I used AWS API Gateway as well.
+With this I managed to achieve the expected results by uploading an audio in the API call https://r3cv0ys8c7.execute-api.eu-west-1.amazonaws.com/etapa/analysis.
+
+To do this, the first thing I did was create a docker with the dependencies of my python script to later upload it to an AWS ECR and connect the lambda function so that it is executed with each API call.
+
+This level has been the most complex since I do not have much experience in the subject but with full interest in improving everything quickly.
+
+ChatGPT
+Project Name
+Short description of your project.
+
+Introduction
+Brief introduction to the project, including its purpose and any important information.
+
+Installation
+Instructions on how to install and set up the project.
+
+Usage
+Instructions on how to use the project and its features.
+
+Modes
+Explorer Mode
+Starting with explorer mode was relatively straightforward once the OpenAI API was obtained. The initial steps involved introducing the prompt and configuring the appropriate black box. I worked with version 0.28, although it's important to note that versions are continuously updated, and the black boxes may change.
+
+Hero Mode
+Hero mode presented a bit more complexity as it involved introducing a new program and navigating through documentation that wasn't always up-to-date. Updating Python to version 3.11 was necessary, requiring the creation of a new environment and installation of all dependencies.
+
+Master Mode
+Master mode was the most challenging yet intriguing phase of the project. It required leveraging various technologies simultaneously. I opted for AWS due to my familiarity with the platform and its scalability advantages, particularly with Lambda functions which suited the task exceptionally well.
+
+Initially, there were complications with saving uploaded audios to an S3 bucket. However, leveraging Lambda functions triggered by API calls proved to be a viable solution. AWS API Gateway facilitated the creation of the REST API. Ultimately, the desired outcome was achieved by uploading audio via the API call link to API.
+
+To accomplish this, I created a Docker image with the necessary dependencies for my Python script, which was then uploaded to an AWS ECR. The Lambda function was connected to execute with each API call.
+
+Conclusion
+Reflections on the project, lessons learned, and plans for future improvements.
+
+Contributing
+Guidelines on how others can contribute to the project.
+
+License
+Information about the project's license.
